@@ -27,13 +27,13 @@ sub.wait(секунды)                     // Пауза в выполнени
 sub.time()                            // Текущее время
 ```
 
-### **3D графика (2D тоже)**
+### **3D графика**
 ```javascript
-sub.spawn("ТипОбъекта") -> var.объект // Создать объект
-sub.setPosition(var.объект, x, y, z)  // Позиция
-sub.setRotation(var.объект, x, y, z)  // Вращение
-sub.setScale(var.объект, x, y, z)     // Масштаб
-sub.setColor(var.объект, r, g, b)     // Цвет (0-255)
+sub.spawn3/2D("ТипОбъекта") -> var.объект // Создать объект
+sub.setPosition3/2D(var.объект, x, y, z)  // Позиция
+sub.setRotation3D(var.объект, x, y, z)  // Вращение
+sub.setScale3/2D(var.объект, x, y, z)     // Масштаб
+sub.setColor3/2D(var.объект, r, g, b)     // Цвет (0-255)
 ```
 
 ### **Файловая система**
@@ -141,3 +141,5 @@ sub.loop(5, "
 sub.fileWrite("save.txt", "Игра начата");
 sub.log("Статус: " + sub.fileRead("save.txt"));
 '''
+
+# **Ссылка на сайт с самим языком: https://sites.google.com/view/subscriptengine/**
